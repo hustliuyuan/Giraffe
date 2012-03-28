@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0A703E3E-095A-441E-A9B1-B185FF8CB36A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Base</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfAtl>Dynamic</UseOfAtl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\lib\</OutDir>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>$(Boost)\include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+    <ReferencePath>$(Boost)\lib;$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib</ReferencePath>
+    <LibraryPath>$(Boost)\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(Boost)\include;$(IncludePath)</IncludePath>
+    <ReferencePath>$(Boost)\lib;$(ReferencePath)</ReferencePath>
+    <LibraryPath>$(Boost)\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>..\..\lib</OutDir>
+    <TargetExt>.lib</TargetExt>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>TIXML_USE_STL;WIN32;_DEBUG;_CONSOLE;LOG_4_CPLUS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../src;../../src/Base;../../include;../../include/network_header;../../</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>Base/stdafx.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(IntDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>network.lib;log4cplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../lib;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../include/network_header;../../include;../../src;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PrecompiledHeaderFile>Base\stdafx.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>../../lib/network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Base\GHeader.cpp" />
+    <ClCompile Include="..\..\src\Base\PPktDef.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFBroadcastEventPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFLeaderLocationReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFLeaderLocationResPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFLogUpdateCommit.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFLogUpdatePoposal.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFLogUpdatePromise.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosEventPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosLeaderKeepAliveReq.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosLeaderKeepAliveRes.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFAttrGetReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFAttrGetResPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFAttrSetReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFAttrSetResPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFCloseReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFCloseResPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFDeleteFileReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFDirAttrGetReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFDirAttrGetResPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFDirAttrSetReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFDirAttrSetResPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFExitsReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFExitsResPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFKeepAliveReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFKeepAliveResPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFLockReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFLockResPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFMkdirReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFMkdirResPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFOpenReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFOpenResPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFReadDirReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFReadDirResPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFReleaseReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFUnlinkReqPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFWatcherEventPkt.cpp" />
+    <ClCompile Include="..\..\src\Packets\GQuitApplicationPkt.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Base\GCommon.h" />
+    <ClInclude Include="..\..\src\Base\GHeader.h" />
+    <ClInclude Include="..\..\src\Base\PPktDef.h" />
+    <ClInclude Include="..\..\src\Base\WatcherEvent.h" />
+    <ClInclude Include="..\..\src\Base\WatcherEventType.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFBroadcastEventPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFLeaderLocationReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFLeaderLocationResPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFLogUpdateCommit.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFLogUpdatePoposal.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFLogUpdatePromise.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosEventPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosLeaderKeepAliveReq.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosLeaderKeepAliveRes.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosPackets.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFAttrGetReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFAttrGetResPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFAttrSetReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFAttrSetResPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFCloseReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFCloseResPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFDeleteFileReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFDirAttrGetReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFDirAttrGetResPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFDirAttrSetReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFDirAttrSetResPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFExitsReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFExitsResPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFKeepAliveReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFKeepAliveResPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFLockReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFLockResPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFMkdirReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFMkdirResPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFOpenReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFOpenResPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFPackets.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFReadDirReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFReadDirResPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFReleaseReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFUnlinkReqPkt.h" />
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFWatcherEventPkt.h" />
+    <ClInclude Include="..\..\src\Packets\GQuitApplicationPkt.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

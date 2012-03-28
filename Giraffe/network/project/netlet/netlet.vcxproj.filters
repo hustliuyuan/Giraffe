@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\common\Checksum.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Header.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\IAppTerminate.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\IPacketParser.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\ISerializble.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\MD5.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\PPlatTransThreadFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\PTaskQueue.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\PTime.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\config\PConfigValue.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\config\PiniReader.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\config\PPublicConfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\config\PSettings.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\multithread\database\IDBConnect.cpp">
+      <Filter>multithread\database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\multithread\job\IJob.cpp">
+      <Filter>multithread\job</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\multithread\job\IJobHandler.cpp">
+      <Filter>multithread\job</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\multithread\job\PJobQueue.cpp">
+      <Filter>multithread\job</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\multithread\job\PJobThreadFunc.cpp">
+      <Filter>multithread\job</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\multithread\job\PJobThreadMgr.cpp">
+      <Filter>multithread\job</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\INatTransImpl.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\ITransImpl.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\PDefaultRecvBufferParser.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\PNatPktHandler.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\PNatPktParser.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\PNatTransImpl.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\PSendBuffer.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\PSocket.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\PTCPSocket.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\PTransImpl.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\PTransImplTcp.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\PTransImplUdp.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\detail\PUDPSocket.cpp">
+      <Filter>network\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\IRecvBufferParser.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\ISocketTypeFactoryImpl.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\PacketINFO.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\PAddressable.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\PInetAddr.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\PNatTransmitter.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\PReceiveBuffer.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\PSocketType.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\PSocketTypeFactory.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\network\PTransmitter.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\os\PUtils.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\packet\internal\PInternalNoDeletePkt.cpp">
+      <Filter>packet\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\packet\internal\PInternalQuitApplicationPkt.cpp">
+      <Filter>packet\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\packet\nats\PNATAckPkt.cpp">
+      <Filter>packet\nats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\packet\nats\PNATHeartBeatPkt.cpp">
+      <Filter>packet\nats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\packet\nats\PNATNotifyPkt.cpp">
+      <Filter>packet\nats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\packet\nats\PNATRelayPkt.cpp">
+      <Filter>packet\nats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\packet\nats\PNATReqPkt.cpp">
+      <Filter>packet\nats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\packet\nats\PNATTestAckPkt.cpp">
+      <Filter>packet\nats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\packet\nats\PNATTestReqPkt.cpp">
+      <Filter>packet\nats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\packet\PPacketBase.cpp">
+      <Filter>packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\packet\PPacketDefinition.cpp">
+      <Filter>packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\packet\PPacketFactory.cpp">
+      <Filter>packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\IUIMsg.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\IUIMsgHandlerTask.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\PNetworkThreadBase.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\network_header\common\Checksum.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\Exception.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\Header.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\IAppTerminate.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\IPacketHandler.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\IPacketHandlerTask.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\IPacketParser.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\ISerializble.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\ITask.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\log.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\MD5.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\meldsupport.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\PPlatTransThreadFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\PSynQueue.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\PTaskQueue.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\PTime.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\common\win32.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\config\PConfigvalue.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\config\PiniReader.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\config\PPublicConfig.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\config\PSettings.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\multithread\database\IDBConnect.h">
+      <Filter>multithread\database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\multithread\job\IJob.h">
+      <Filter>multithread\job</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\multithread\job\IJobHandler.h">
+      <Filter>multithread\job</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\multithread\job\PJobQueue.h">
+      <Filter>multithread\job</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\multithread\job\PJobThreadFunc.h">
+      <Filter>multithread\job</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\multithread\job\PJobThreadMgr.h">
+      <Filter>multithread\job</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\INatTransImpl.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\ITransImpl.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\PDefaultRecvBufferParser.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\PNatPkthandler.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\PNatPktParser.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\PNatTransImpl.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\psendbuffer.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\PSocket.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\ptcpsocket.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\PTCPSocketAsyn.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\PTransImpl.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\ptransimpltcp.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\PTransImplTcpAsyn.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\PTransImplUdp.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\pudpsocket.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\detail\SocketINFO.h">
+      <Filter>network\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\IRecvBufferParser.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\ISocketTypeFactoryImpl.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\PacketINFO.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\PAddressable.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\PInetAddr.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\PNatTransmitter.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\PReceiveBuffer.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\PSocketType.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\PSocketTypeFactory.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network\PTransmitter.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\os\PUtils.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\PPacketBase.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\PPacketDefinition.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\PPacketFactory.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\nats\NATPacket.h">
+      <Filter>packet\nats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATAckPkt.h">
+      <Filter>packet\nats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATHeartBeatPkt.h">
+      <Filter>packet\nats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATNotifyPkt.h">
+      <Filter>packet\nats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATRelayPkt.h">
+      <Filter>packet\nats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATReqPkt.h">
+      <Filter>packet\nats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATTestAckPkt.h">
+      <Filter>packet\nats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATTestReqPkt.h">
+      <Filter>packet\nats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\internal\PInternalNoDeletePkt.h">
+      <Filter>packet\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\internal\PInternalPkt.h">
+      <Filter>packet\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\packet\internal\PInternalQuitApplicationPkt.h">
+      <Filter>packet\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\ui\IUIMsg.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\ui\IUIMsgHandlerTask.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\ui\PNetworkThreadBase.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\network_header\network.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="packet">
+      <UniqueIdentifier>{12582610-d711-4d6e-b208-21a075abb8f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="packet\nats">
+      <UniqueIdentifier>{aba7dd47-9c16-41f6-a867-85cd73f3214a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="packet\internal">
+      <UniqueIdentifier>{6e1b0f83-66d5-4646-a91a-092af7042ec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{0e6b8c08-b29d-45e6-9b85-4c28fe21138a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{699734f7-2a2a-4a60-83ea-a6c1418d4a38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{577e1cd1-d0e9-4e42-9517-f29b2541f58a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\detail">
+      <UniqueIdentifier>{f8978361-152c-4ce3-a362-ca85a5bf29c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{538c270a-bef4-4754-8a03-47373adb3170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="multithread">
+      <UniqueIdentifier>{244e9fb9-8cae-4035-a926-bd654efa03a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="multithread\job">
+      <UniqueIdentifier>{18939ae6-0ae4-45d9-8a09-b4436d6b0673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="multithread\database">
+      <UniqueIdentifier>{5f69f723-19bf-42ef-a6d0-d4bd8f8b2baa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="os">
+      <UniqueIdentifier>{7c4508ac-eb4a-4fdb-a4db-780d818a79fd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

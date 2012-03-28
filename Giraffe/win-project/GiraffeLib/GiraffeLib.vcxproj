@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AEB4C87F-07CF-42ED-B71F-F9A343657234}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ChubbyLib</RootNamespace>
+    <ProjectName>GiraffeLib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfAtl>Dynamic</UseOfAtl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\bin\windows</OutDir>
+    <IncludePath>$(Boost)\include;$(IncludePath)</IncludePath>
+    <ReferencePath>$(Boost)\lib;$(ReferencePath)</ReferencePath>
+    <LibraryPath>$(Boost)\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;LOG_4_CPLUS;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../;../../include;../../src;../../src/GiraffeLib;../../src/packets/Giraffe/;../../src/Base;../../include/network_header;../../include/log4cplus;</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>network.lib;Base.lib;log4cplus.lib;libdb47.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <PreventDllBinding>false</PreventDllBinding>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\bin\Giraffe_conf\client_conf.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\GiraffeLib\config\GClientConfig.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\GCLFileCache.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\Giraffe.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\LeaderElectionTest.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\logic\GCLComm.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\logic\GCLCommLogger.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\logic\GCLPktHandler.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\logic\GCLPktParser.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\logic\GCLTest.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\Session.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\Watcher.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\WatcherManager.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\WatcherThreadFunc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\GiraffeLib\CallbackEvent.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\config\GClientConfig.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\GCLFileCache.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\Giraffe.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\logic\GCLComm.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\logic\GCLCommLogger.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\logic\GCLPktHandler.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\logic\GCLPktParser.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\Session.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\Watcher.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\WatcherManager.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\WatcherThreadFunc.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

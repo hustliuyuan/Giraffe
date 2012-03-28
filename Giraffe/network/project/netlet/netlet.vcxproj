@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Unicode|Win32">
+      <Configuration>Debug_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Unicode|Win32">
+      <Configuration>Release_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6A0E4052-8F40-481F-BCD2-018AF08F7058}</ProjectGuid>
+    <RootNamespace>log4cplus_dll</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\bin\windows</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Boost)\include;$(IncludePath)</IncludePath>
+    <ReferencePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Boost)\lib;$(ReferencePath)</ReferencePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Boost)\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\PictureTable\project\boost\include;$(IncludePath)</IncludePath>
+    <ReferencePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\PictureTable\project\boost\lib;$(ReferencePath)</ReferencePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\PictureTable\project\boost\lib;$(LibraryPath)</LibraryPath>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">network</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/log4cplus_dll.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../src/network_header;../../src/common;../;../../;../../src/;../../src/include;../../src/os;../../src/common;../../src/packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;WIN32;NODEBUG;_WINDOWS;_USRDLL;NETWORK_BUILD_DLL;LOG_4_CPLUS;INSIDE_NETWORK;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\Release/log4cplus_dll.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;log4cplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\bin\windows\network.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <ProgramDatabaseFile>.\Release/log4cplus.pdb</ProgramDatabaseFile>
+      <ImportLibrary>..\..\..\lib\network.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/log4cplus_dll.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/log4cplus_dll.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../network_header;../../../../client;../common;../;../../;../src/;../../include;../../src;../include;../../src/include../../os;../../common;../../packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_USRDLL;NETWORK_BUILD_DLL;LOG_4_CPLUS;INSIDE_NETWORK;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>common\Header.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)Header.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4273;4819;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;log4cplusD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\networkD.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\lib;..\..\..\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <ProgramDatabaseFile>.\Debug\network.pdb</ProgramDatabaseFile>
+      <ImportLibrary>..\..\..\..\lib\networkD.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/log4cplus_dll.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/log4cplus_dll.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_USRDLL;LOG4CPLUS_BUILD_DLL;INSIDE_LOG4CPLUS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\$(Configuration)/log4cplus_dll.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Configuration)/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Configuration)/</ObjectFileName>
+      <ProgramDataBaseFileName>.\$(Configuration)/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(Configuration)/log4cplusd.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\$(Configuration)/log4cplusd.pdb</ProgramDatabaseFile>
+      <ImportLibrary>.\$(Configuration)/log4cplusd.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\$(Configuration)/log4cplus_dll.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/log4cplus_dll.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;LOG4CPLUS_BUILD_DLL;INSIDE_LOG4CPLUS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\$(Configuration)/log4cplus_dll.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Configuration)/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Configuration)/</ObjectFileName>
+      <ProgramDataBaseFileName>.\$(Configuration)/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(Configuration)/log4cplus.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\$(Configuration)/log4cplus.pdb</ProgramDatabaseFile>
+      <ImportLibrary>.\$(Configuration)/log4cplus.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\$(Configuration)/log4cplus_dll.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\common\Checksum.cpp" />
+    <ClCompile Include="..\..\src\common\Header.cpp" />
+    <ClCompile Include="..\..\src\common\IAppTerminate.cpp" />
+    <ClCompile Include="..\..\src\common\IPacketParser.cpp" />
+    <ClCompile Include="..\..\src\common\ISerializble.cpp" />
+    <ClCompile Include="..\..\src\common\MD5.cpp" />
+    <ClCompile Include="..\..\src\common\PPlatTransThreadFunc.cpp" />
+    <ClCompile Include="..\..\src\common\PTaskQueue.cpp" />
+    <ClCompile Include="..\..\src\common\PTime.cpp" />
+    <ClCompile Include="..\..\src\config\PConfigValue.cpp" />
+    <ClCompile Include="..\..\src\config\PiniReader.cpp" />
+    <ClCompile Include="..\..\src\config\PPublicConfig.cpp" />
+    <ClCompile Include="..\..\src\config\PSettings.cpp" />
+    <ClCompile Include="..\..\src\multithread\database\IDBConnect.cpp" />
+    <ClCompile Include="..\..\src\multithread\job\IJob.cpp" />
+    <ClCompile Include="..\..\src\multithread\job\IJobHandler.cpp" />
+    <ClCompile Include="..\..\src\multithread\job\PJobQueue.cpp" />
+    <ClCompile Include="..\..\src\multithread\job\PJobThreadFunc.cpp" />
+    <ClCompile Include="..\..\src\multithread\job\PJobThreadMgr.cpp" />
+    <ClCompile Include="..\..\src\network\detail\INatTransImpl.cpp" />
+    <ClCompile Include="..\..\src\network\detail\ITransImpl.cpp" />
+    <ClCompile Include="..\..\src\network\detail\PDefaultRecvBufferParser.cpp" />
+    <ClCompile Include="..\..\src\network\detail\PNatPktHandler.cpp" />
+    <ClCompile Include="..\..\src\network\detail\PNatPktParser.cpp" />
+    <ClCompile Include="..\..\src\network\detail\PNatTransImpl.cpp" />
+    <ClCompile Include="..\..\src\network\detail\PSendBuffer.cpp" />
+    <ClCompile Include="..\..\src\network\detail\PSocket.cpp" />
+    <ClCompile Include="..\..\src\network\detail\PTCPSocket.cpp" />
+    <ClCompile Include="..\..\src\network\detail\PTransImpl.cpp" />
+    <ClCompile Include="..\..\src\network\detail\PTransImplTcp.cpp" />
+    <ClCompile Include="..\..\src\network\detail\PTransImplUdp.cpp" />
+    <ClCompile Include="..\..\src\network\detail\PUDPSocket.cpp" />
+    <ClCompile Include="..\..\src\network\IRecvBufferParser.cpp" />
+    <ClCompile Include="..\..\src\network\ISocketTypeFactoryImpl.cpp" />
+    <ClCompile Include="..\..\src\network\PacketINFO.cpp" />
+    <ClCompile Include="..\..\src\network\PAddressable.cpp" />
+    <ClCompile Include="..\..\src\network\PInetAddr.cpp" />
+    <ClCompile Include="..\..\src\network\PNatTransmitter.cpp" />
+    <ClCompile Include="..\..\src\network\PReceiveBuffer.cpp" />
+    <ClCompile Include="..\..\src\network\PSocketType.cpp" />
+    <ClCompile Include="..\..\src\network\PSocketTypeFactory.cpp" />
+    <ClCompile Include="..\..\src\network\PTransmitter.cpp" />
+    <ClCompile Include="..\..\src\os\PUtils.cpp" />
+    <ClCompile Include="..\..\src\packet\internal\PInternalNoDeletePkt.cpp" />
+    <ClCompile Include="..\..\src\packet\internal\PInternalQuitApplicationPkt.cpp" />
+    <ClCompile Include="..\..\src\packet\nats\PNATAckPkt.cpp" />
+    <ClCompile Include="..\..\src\packet\nats\PNATHeartBeatPkt.cpp" />
+    <ClCompile Include="..\..\src\packet\nats\PNATNotifyPkt.cpp" />
+    <ClCompile Include="..\..\src\packet\nats\PNATRelayPkt.cpp" />
+    <ClCompile Include="..\..\src\packet\nats\PNATReqPkt.cpp" />
+    <ClCompile Include="..\..\src\packet\nats\PNATTestAckPkt.cpp" />
+    <ClCompile Include="..\..\src\packet\nats\PNATTestReqPkt.cpp" />
+    <ClCompile Include="..\..\src\packet\PPacketBase.cpp" />
+    <ClCompile Include="..\..\src\packet\PPacketDefinition.cpp" />
+    <ClCompile Include="..\..\src\packet\PPacketFactory.cpp" />
+    <ClCompile Include="..\..\src\ui\IUIMsg.cpp" />
+    <ClCompile Include="..\..\src\ui\IUIMsgHandlerTask.cpp" />
+    <ClCompile Include="..\..\src\ui\PNetworkThreadBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\network_header\common\Checksum.h" />
+    <ClInclude Include="..\..\src\network_header\common\Exception.h" />
+    <ClInclude Include="..\..\src\network_header\common\Header.h" />
+    <ClInclude Include="..\..\src\network_header\common\IAppTerminate.h" />
+    <ClInclude Include="..\..\src\network_header\common\IPacketHandler.h" />
+    <ClInclude Include="..\..\src\network_header\common\IPacketHandlerTask.h" />
+    <ClInclude Include="..\..\src\network_header\common\IPacketParser.h" />
+    <ClInclude Include="..\..\src\network_header\common\ISerializble.h" />
+    <ClInclude Include="..\..\src\network_header\common\ITask.h" />
+    <ClInclude Include="..\..\src\network_header\common\log.h" />
+    <ClInclude Include="..\..\src\network_header\common\MD5.h" />
+    <ClInclude Include="..\..\src\network_header\common\meldsupport.h" />
+    <ClInclude Include="..\..\src\network_header\common\PPlatTransThreadFunc.h" />
+    <ClInclude Include="..\..\src\network_header\common\PSynQueue.h" />
+    <ClInclude Include="..\..\src\network_header\common\PTaskQueue.h" />
+    <ClInclude Include="..\..\src\network_header\common\PTime.h" />
+    <ClInclude Include="..\..\src\network_header\common\win32.h" />
+    <ClInclude Include="..\..\src\network_header\config\PConfigvalue.h" />
+    <ClInclude Include="..\..\src\network_header\config\PiniReader.h" />
+    <ClInclude Include="..\..\src\network_header\config\PPublicConfig.h" />
+    <ClInclude Include="..\..\src\network_header\config\PSettings.h" />
+    <ClInclude Include="..\..\src\network_header\multithread\database\IDBConnect.h" />
+    <ClInclude Include="..\..\src\network_header\multithread\job\IJob.h" />
+    <ClInclude Include="..\..\src\network_header\multithread\job\IJobHandler.h" />
+    <ClInclude Include="..\..\src\network_header\multithread\job\PJobQueue.h" />
+    <ClInclude Include="..\..\src\network_header\multithread\job\PJobThreadFunc.h" />
+    <ClInclude Include="..\..\src\network_header\multithread\job\PJobThreadMgr.h" />
+    <ClInclude Include="..\..\src\network_header\network.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\INatTransImpl.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\ITransImpl.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\PDefaultRecvBufferParser.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\PNatPkthandler.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\PNatPktParser.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\PNatTransImpl.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\psendbuffer.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\PSocket.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\ptcpsocket.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\PTCPSocketAsyn.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\PTransImpl.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\ptransimpltcp.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\PTransImplTcpAsyn.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\PTransImplUdp.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\pudpsocket.h" />
+    <ClInclude Include="..\..\src\network_header\network\detail\SocketINFO.h" />
+    <ClInclude Include="..\..\src\network_header\network\IRecvBufferParser.h" />
+    <ClInclude Include="..\..\src\network_header\network\ISocketTypeFactoryImpl.h" />
+    <ClInclude Include="..\..\src\network_header\network\PacketINFO.h" />
+    <ClInclude Include="..\..\src\network_header\network\PAddressable.h" />
+    <ClInclude Include="..\..\src\network_header\network\PInetAddr.h" />
+    <ClInclude Include="..\..\src\network_header\network\PNatTransmitter.h" />
+    <ClInclude Include="..\..\src\network_header\network\PReceiveBuffer.h" />
+    <ClInclude Include="..\..\src\network_header\network\PSocketType.h" />
+    <ClInclude Include="..\..\src\network_header\network\PSocketTypeFactory.h" />
+    <ClInclude Include="..\..\src\network_header\network\PTransmitter.h" />
+    <ClInclude Include="..\..\src\network_header\os\PUtils.h" />
+    <ClInclude Include="..\..\src\network_header\packet\internal\PInternalNoDeletePkt.h" />
+    <ClInclude Include="..\..\src\network_header\packet\internal\PInternalPkt.h" />
+    <ClInclude Include="..\..\src\network_header\packet\internal\PInternalQuitApplicationPkt.h" />
+    <ClInclude Include="..\..\src\network_header\packet\nats\NATPacket.h" />
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATAckPkt.h" />
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATHeartBeatPkt.h" />
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATNotifyPkt.h" />
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATRelayPkt.h" />
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATReqPkt.h" />
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATTestAckPkt.h" />
+    <ClInclude Include="..\..\src\network_header\packet\nats\PNATTestReqPkt.h" />
+    <ClInclude Include="..\..\src\network_header\packet\PPacketBase.h" />
+    <ClInclude Include="..\..\src\network_header\packet\PPacketDefinition.h" />
+    <ClInclude Include="..\..\src\network_header\packet\PPacketFactory.h" />
+    <ClInclude Include="..\..\src\network_header\ui\IUIMsg.h" />
+    <ClInclude Include="..\..\src\network_header\ui\IUIMsgHandlerTask.h" />
+    <ClInclude Include="..\..\src\network_header\ui\PNetworkThreadBase.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

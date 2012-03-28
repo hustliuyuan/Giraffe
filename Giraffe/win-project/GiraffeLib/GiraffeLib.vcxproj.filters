@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="config">
+      <UniqueIdentifier>{df1fe703-6885-4172-9efb-34af650f5979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic">
+      <UniqueIdentifier>{436e5f15-3238-4e69-bafb-95cb705a7ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{e6e7de5d-8891-47bc-a107-de4ea1d18199}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\GiraffeLib\logic\GCLComm.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GiraffeLib\logic\GCLCommLogger.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GiraffeLib\logic\GCLPktHandler.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GiraffeLib\logic\GCLPktParser.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GiraffeLib\Giraffe.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\Session.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\GCLFileCache.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\Watcher.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\WatcherManager.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\WatcherThreadFunc.cpp" />
+    <ClCompile Include="..\..\src\GiraffeLib\LeaderElectionTest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GiraffeLib\logic\GCLTest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GiraffeLib\config\GClientConfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\GiraffeLib\logic\GCLComm.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GiraffeLib\logic\GCLCommLogger.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GiraffeLib\logic\GCLPktHandler.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GiraffeLib\logic\GCLPktParser.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GiraffeLib\Giraffe.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\Session.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\GCLFileCache.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\Watcher.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\WatcherManager.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\WatcherThreadFunc.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\CallbackEvent.h" />
+    <ClInclude Include="..\..\src\GiraffeLib\config\GClientConfig.h">
+      <Filter>config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\bin\Giraffe_conf\client_conf.ini">
+      <Filter>config</Filter>
+    </None>
+  </ItemGroup>
+</Project>

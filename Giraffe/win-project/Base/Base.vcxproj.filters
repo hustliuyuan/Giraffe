@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Base\GHeader.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Base\PPktDef.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFWatcherEventPkt.cpp">
+      <Filter>packets\giraffe\WatcherEventPkt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFLeaderLocationReqPkt.cpp">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFLeaderLocationResPkt.cpp">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFLogUpdateCommit.cpp">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFLogUpdatePoposal.cpp">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFLogUpdatePromise.cpp">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosEventPkt.cpp">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosLeaderKeepAliveReq.cpp">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosLeaderKeepAliveRes.cpp">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFAttrGetReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFAttrGetResPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFAttrSetReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFAttrSetResPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFCloseReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFCloseResPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFDeleteFileReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFDirAttrGetReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFDirAttrGetResPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFDirAttrSetReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFDirAttrSetResPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFExitsReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFExitsResPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFKeepAliveReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFKeepAliveResPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFLockReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFLockResPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFMkdirReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFMkdirResPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFOpenReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFOpenResPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFReadDirReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFReadDirResPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFReleaseReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\PGRFUnlinkReqPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\Giraffe\paxos\PGRFBroadcastEventPkt.cpp">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packets\GQuitApplicationPkt.cpp">
+      <Filter>packets\giraffe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Base">
+      <UniqueIdentifier>{49842839-3168-4a61-a555-d467e02f0a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="packets">
+      <UniqueIdentifier>{d1912a03-752b-46d7-ac36-8f507a5b3a6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="packets\giraffe">
+      <UniqueIdentifier>{0dd0f2a0-b651-4a67-b893-5cfed5d668e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="packets\giraffe\paxos">
+      <UniqueIdentifier>{b3566d9f-6b98-4a32-9354-24091ae198db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="packets\giraffe\WatcherEventPkt">
+      <UniqueIdentifier>{792e6abf-3109-40e8-8c50-98f5586a16b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Base\GHeader.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Base\PPktDef.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Base\WatcherEventType.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFWatcherEventPkt.h">
+      <Filter>packets\giraffe\WatcherEventPkt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFLeaderLocationReqPkt.h">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFLeaderLocationResPkt.h">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFLogUpdateCommit.h">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFLogUpdatePoposal.h">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFLogUpdatePromise.h">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosEventPkt.h">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosLeaderKeepAliveReq.h">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosLeaderKeepAliveRes.h">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFAttrGetReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFAttrGetResPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFAttrSetReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFAttrSetResPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFCloseReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFCloseResPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFDeleteFileReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFDirAttrGetReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFDirAttrGetResPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFDirAttrSetReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFDirAttrSetResPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFExitsReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFExitsResPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFKeepAliveReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFKeepAliveResPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFLockReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFLockResPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFMkdirReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFMkdirResPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFOpenReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFOpenResPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFPackets.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFReadDirReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFReadDirResPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFReleaseReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\PGRFUnlinkReqPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFPaxosPackets.h">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\Giraffe\paxos\PGRFBroadcastEventPkt.h">
+      <Filter>packets\giraffe\paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Packets\GQuitApplicationPkt.h">
+      <Filter>packets\giraffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Base\GCommon.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Base\WatcherEvent.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

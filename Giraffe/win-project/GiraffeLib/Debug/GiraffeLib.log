@@ -1,0 +1,7 @@
+﻿生成启动时间为 2012/2/27 PM 04:16:18。
+     1>项目“E:\GIRAFFE\code\project\GiraffeLib\GiraffeLib.vcxproj”在节点 3 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\GiraffeLib.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(254,5): error MSB3371: 无法创建文件“Debug\GiraffeLib.unsuccessfulbuild”。磁盘空间不足。
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(254,5): error MSB3371: 
+     1>

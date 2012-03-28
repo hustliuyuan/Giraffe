@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Giraffe\logic\GMSPktHandler.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\logic\GMSPktParser.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\logic\GMSServer.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\logic\GMSComm.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\logic\GMSCommLogger.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\BerkelyFileSystem.cpp">
+      <Filter>FS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\SessionManager.cpp">
+      <Filter>sessionmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\logic\GPaxosComm.cpp">
+      <Filter>paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\logic\GPaxosPktHandler.cpp">
+      <Filter>paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\GPaxosProtocol.cpp">
+      <Filter>paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\GPaxosAcceptor.cpp">
+      <Filter>paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\GPaxosLearner.cpp">
+      <Filter>paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\GPaxosProposer.cpp">
+      <Filter>paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\GPaxosLeaderElection.cpp">
+      <Filter>paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\GPaxosFollower.cpp">
+      <Filter>paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\GPaxosLeader.cpp">
+      <Filter>paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\GPaxosState.cpp">
+      <Filter>paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Giraffe\GServerConfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Giraffe\logic\GMSPktHandler.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\logic\GMSPktParser.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\logic\GMSComm.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\logic\GMSCommLogger.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\SessionManager.h">
+      <Filter>sessionmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\SessionData.h">
+      <Filter>sessionmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\HandleData.h">
+      <Filter>sessionmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\NodeData.h">
+      <Filter>sessionmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\BerkelyFileSystem.h">
+      <Filter>FS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\logic\GPaxosComm.h">
+      <Filter>paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\logic\GPaxosPktHandler.h">
+      <Filter>paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\GPaxosProtocol.h">
+      <Filter>paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\GPaxosState.h">
+      <Filter>paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\GPaxosAcceptor.h">
+      <Filter>paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\GPaxosLearner.h">
+      <Filter>paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\GPaxosProposer.h">
+      <Filter>paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\GPaxosLeaderElection.h">
+      <Filter>paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\GPaxosFollower.h">
+      <Filter>paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\GPaxosLeader.h">
+      <Filter>paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\GServerConfig.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Giraffe\GPaxosUtils.h">
+      <Filter>paxos</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\bin\Giraffe_conf\Giraffe_conf.ini">
+      <Filter>config</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="config">
+      <UniqueIdentifier>{6a8dba2c-99fc-41ae-9c85-047f0640b628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic">
+      <UniqueIdentifier>{26d71111-8bbf-49c1-adfa-d628267182f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FS">
+      <UniqueIdentifier>{71ec5d6c-359b-4061-9020-1147c94639bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sessionmanager">
+      <UniqueIdentifier>{72e8c08a-66b6-4017-8191-368cc086ed06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="paxos">
+      <UniqueIdentifier>{374f9f0d-fe36-4d81-808e-3bea08f07961}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
